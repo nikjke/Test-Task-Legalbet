@@ -1,11 +1,103 @@
 @import "reset";
 
+
+.page-header {
+    width: 320px;
+    margin: 0 auto;
+    padding: 12px;
+    background: #D0D0D0;
+    min-height: 56px;
+    box-sizing: border-box;
+
+    &__logo {
+        width: 25px;
+        display: block;
+    }
+
+    &__logo-legalbet {
+        display: none;
+    }
+}
+
+/* Навигация */
+
+.main-nav {
+    &__wrapper {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    display: block;  
+}
+
+.bookmakers {
+    display: none;
+}
+
+.bonuses {
+    display: none;
+}
+
+.forecasts {
+    display: none;
+}
+
+.betting-center {
+    display: none;
+}
+
+.experts {
+    display: none;
+}
+
+.blogs {
+    display: none;
+}
+
+.school-of-betting {
+    width: 160px;
+    margin-left: 47px;
+    text-align: center;
+
+    &__list {
+        width: 296px;
+        height: 48px;
+        text-align-last: center;
+    }
+}
+
+.support {
+    display: none;
+}
+
+.search {
+    display: none;
+}
+
+.user-list {
+    margin-left: auto;
+    width: 16px;
+    
+}
+
+/* Конец навигации */
+
+.stats {
+    display: none;
+    background: #2B2E36;
+}
+
+/* Начало стилей для калькулятора */
+
 .page-main {
     width: 320px;
     margin: 0 auto;
     padding: 12px;
     background: #D0D0D0;
     min-height: 450px;
+    box-sizing: border-box;
 
     &__title {
         font-family: FuturaPT;
@@ -18,12 +110,15 @@
     width: 296px;
     padding: 12px;
     background: #ffffff;
+    box-sizing: border-box;
+
+    &__wrapper {
+        padding: 0 26px;
+    }
 
     &__title {
         margin-bottom: 10px;
-    }
-
-    
+    }  
 }
 
 .input {
@@ -75,10 +170,126 @@
     display: block;
 }
 
+.line  {
+    width: 100%;
+    border-top: 1px dashed #000;
+    margin-top: 16px;
+}
+
+.random-text {
+    &__list {
+        padding-top: 17px;
+        padding-left: 4px;
+    }
+
+    &__item {
+        width: 238px;
+        height: 50px;
+        list-style: disc;
+    }
+}
+
+/* Конец стилей для калькулятора */
+
+.bookmakers-list {
+    width: 296px;
+    padding: 12px;
+    background: #ffffff;
+    margin-top: 15px;
+    box-sizing: border-box;
+
+    &__wrapper {
+        padding: 0 26px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+}
+
+.course-bets {
+    width: 296px;
+    padding: 12px;
+    background: #ffffff;
+    margin-top: 15px;
+    box-sizing: border-box;
+
+    &__wrapper {
+        padding: 0 26px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+}
+
+.page-footer {
+    width: 320px;
+    margin: 0 auto;
+    background: #D0D0D0;
+}
+
+.legal-bk-contors {
+    height: 40px;
+    padding: 12px;
+    background: #D0D0D0;
+}
+
+.last-info {
+    height: 40px;
+    background: #fff;
+    border: 1px solid #D0D0D0;
+}
+
+.text {
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .page-header {
+        width: 1080px;
+        min-height: 64px;
+
+        &__logo-legalbet {
+            display: block;
+        }
+    }
+
+    .main-nav {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .bookmakers {
+        display: flex;
+    }
+    
+    .bonuses {
+        display: flex;
+    }
+    
+    .forecasts {
+        display: flex;
+    }
+    
+    .betting-center {
+        display: flex;
+    }
+    
+    .experts {
+        display: flex;
+    }
+    
+    .blogs {
+        display: flex;
+    }
 
 
 
+    .school-of-betting {
+        outline: 1px solid red;
 
-
-
-
+    }
+}
