@@ -92,6 +92,8 @@
 /* Начало стилей для калькулятора */
 
 .page-main {
+    display: flex;
+    flex-direction: column;
     width: 320px;
     margin: 0 auto;
     padding: 12px;
@@ -251,6 +253,7 @@
     }
 
     .page-header {
+        position: relative;
         width: 1080px;
         min-height: 64px;
 
@@ -317,11 +320,16 @@
     }
 
     .page-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
         width: 1080px;
         padding: 0px;
         
 
         &__title {
+            order: 1;
             width: 768px;
             height: 111px;
             margin: 0px;
@@ -333,8 +341,9 @@
     }
 
     .calculator {
+        order: 2;
         width: 768px;
-        height: 351px;
+        min-height: 351px;
         margin-left: 23px;
         padding: 0px;
 
@@ -346,13 +355,7 @@
             
         }
 
-        &__coefficient {
-            position: absolute;
-            margin-left: 208px;
-            margin-top: -45px;
-        }
-
-        &__how-bet {
+        &__coefficient, &__win-summ, &__how-bet, &__your-pays  {
             position: absolute;
             margin-left: 208px;
             margin-top: -45px;
@@ -396,6 +399,7 @@
     }
 
     .bookmakers-list {
+        order: 4;
         width: 768px;
         height: 454px;
         margin-left: 23px;
@@ -409,11 +413,12 @@
     }
 
     .course-bets {
-        position: absolute;
+        margin-top: 0;
+        margin-right: 25px;
+        order: 3;
         width: 240px;
         height: 356px;
-        left: 908px;
-        top: 225px;
+        outline: 1px solid green;
 
         &__title {
             font-size: 18px;
