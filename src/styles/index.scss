@@ -319,7 +319,7 @@
     .page-main {
         width: 1080px;
         padding: 0px;
-        outline: 1px solid green;
+        
 
         &__title {
             width: 768px;
@@ -328,7 +328,7 @@
             padding: 24px;
             font-size: 48px;
             line-height: 48px;
-            outline: 1px solid red;
+            
         }
     }
 
@@ -337,19 +337,13 @@
         height: 351px;
         margin-left: 23px;
         padding: 0px;
-        outline: 1px solid green;
-
-        &__wrapper {
-            
-            outline: 1px solid blue;
-        }
 
         &__title {
             width: 298px;
             height: 48px;
             font-size: 24px;
             line-height: 48px;
-            outline: 1px solid blue;
+            
         }
 
         &__coefficient {
@@ -368,6 +362,7 @@
             width: 394px;
             height: 56px;
             margin-left: 208px;
+            margin-top: 16px;
         }
     }
 
@@ -379,22 +374,17 @@
         line-height: 16px;
         display: flex;
         align-items: center;
-        // float: left;
-        outline: 1px solid blue;
     }
 
     .input {
         width: 394px;
         height: 40px;
-        
-        outline: 1px solid blue;
     }
 
     .random-text {
         &__list {
             width: 100%;
             margin-left: 8px;
-            outline: 1px solid blue;
         }
 
         &__item {
@@ -402,7 +392,6 @@
             height: 23px;
             font-size: 14px;
             line-height: 24px;
-            outline: 1px solid blue;
         }
     }
 
